@@ -1,0 +1,171 @@
+/* Reset de estilos padrão */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #afabab;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o cabeçalho da página principal */
+#servicos-destaque {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#servicos-destaque h2 {
+    font-size: 36px;
+}
+
+/* Estilo para os serviços no catálogo */
+.servico {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servico img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.servico h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.servico p {
+    font-size: 18px;
+}
+
+.servico a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.servico a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a seção de detalhes do serviço */
+#detalhes-servico {
+    text-align: center;
+}
+
+#detalhes-servico .servico-detalhes {
+    margin-top: 20px;
+}
+
+/* Estilo para o formulário de contato */
+#formulario-contato {
+    text-align: center;
+}
+
+#formulario-contato form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formulario-contato label {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formulario-contato button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#formulario-contato button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a seção de informações de contato */
+#informacoes-contato {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#informacoes-contato p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#informacoes-contato a {
+    color: #007BFF;
+}
+
+#informacoes-contato a:hover {
+    text-decoration: underline;
+}

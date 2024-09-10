@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Pet - Clínica e Petshop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Inclua as bibliotecas do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Estilo para a logo -->
+    <style>
+        #logo {
+            max-width: 100px; /* Defina o tamanho máximo da logo */
+            margin: 10px; /* Ajuste as margens conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo da Casa do Pet" id="logo">
+        <h1>Casa do Pet</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel de Serviços ocupando a tela inteira -->
+    <div id="servicos-carrossel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#servicos-carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#servicos-carrossel" data-slide-to="1"></li>
+            <li data-target="#servicos-carrossel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Serviço 1 -->
+            <div class="carousel-item active">
+                <a href="servico1.html">
+                    <img src="1.jpg" alt="Consulta Veterinária" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Consulta Veterinária</h3>
+                        <p>Cuidamos da saúde do seu pet com todo o carinho e atenção que ele merece.</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Serviço 2 -->
+            <div class="carousel-item">
+                <a href="servico2.html">
+                    <img src="2.jpg" alt="Banho e Tosa" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Banho e Tosa</h3>
+                        <p>Deixe seu pet ainda mais bonito e cheiroso com nossos serviços de banho e tosa.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="carousel-item">
+                <a href="servico3.html">
+                    <img src="3.jpg" alt="Vacinação e Cuidados Preventivos" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Vacinação e Cuidados Preventivos</h3>
+                        <p>Mantenha seu pet protegido com nossas vacinas e cuidados preventivos.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Controles de Navegação -->
+        <a class="carousel-control-prev" href="#servicos-carrossel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#servicos-carrossel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Casa do Pet é uma clínica e petshop especializada no cuidado e bem-estar dos animais de estimação. Nossa equipe é formada por profissionais apaixonados por pets, prontos para oferecer o melhor atendimento.</p>
+        <a href="sobre.html">Saiba mais sobre nós</a>
+    </section>
+
+    <!-- Seção "Nossos Serviços" -->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servico">
+            <h3>Consulta Veterinária</h3>
+            <p>Nossos veterinários estão prontos para cuidar da saúde do seu pet, oferecendo consultas completas e diagnósticos precisos.</p>
+            <a href="servico1.html">Saiba mais</a>
+        </div>
+        <div class="servico">
+            <h3>Banho e Tosa</h3>
+            <p>Deixe seu pet lindo e saudável com nossos serviços de banho e tosa. Utilizamos produtos de alta qualidade e técnicas especializadas.</p>
+            <a href="servico2.html">Saiba mais</a>
+        </div>
+        <div class="servico">
+            <h3>Vacinação e Cuidados Preventivos</h3>
+            <p>Mantenha a saúde do seu pet em dia com nosso serviço de vacinação e cuidados preventivos. Garantimos a proteção contra diversas doenças.</p>
+            <a href="servico3.html">Saiba mais</a>
+        </div>
+    </section>   
+
+    <!-- Seção "Contato" -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para agendar uma consulta ou obter mais informações sobre nossos serviços. Preencha o formulário abaixo e responderemos o mais rápido possível.</p>
+
+        <div class="contato-formulario">
+            <form action="processar_contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <div class="informacoes-contato">
+            <h3>Informações de Contato</h3>
+            <p>Telefone: (49) 98847-4623</p>
+            <p>E-mail: wincklerleonardo12@gmail.com</p>
+            <p>R. Condá, 950 - Santa Maria, Chapecó - SC, 89812-250</p>
+            <p>Redes Sociais:</p>
+            <ul>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Casa do Pet - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

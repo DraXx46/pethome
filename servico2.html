@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banho e Tosa - Casa do Pet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes do Serviço de Banho e Tosa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar à Página Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="detalhes-servico">
+        <h2>Banho e Tosa</h2>
+        <div class="servico-detalhes">
+            <img src="6.jpg" alt="Serviço de Banho para Pets">
+            <img src="5.jpg" alt="Serviço de Tosa para Pets">
+            <p>Preço: Sob Consulta</p>
+            <p>Tempo para realizar o serviço: 1 a 2 horas, dependendo do tamanho e tipo de pelagem do pet</p>
+            <p>Dias de atendimento: Segunda a Sábado</p>
+            <p>Horários de atendimento: 9h às 18h</p>
+            <p>Na Casa do Pet, oferecemos serviços de banho e tosa com profissionais qualificados para cuidar do seu pet com todo carinho e atenção. Utilizamos produtos de alta qualidade para garantir o bem-estar e a beleza do seu animal de estimação.</p>
+            <a href="#" onclick="abrirModal()">Agendar Serviço</a>
+        </div>
+    </section>
+
+    <!-- Vídeo incorporado do YouTube -->
+    <section id="video">
+        <h2>Vídeo Relacionado</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/exemplo_de_video" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Modal de Agendamento de Serviço -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Agendar Serviço</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                
+                <label for="data">Data do Serviço:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="pet">Tipo de Pet:</label>
+                <select id="pet" name="pet" required>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Casa do Pet - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
